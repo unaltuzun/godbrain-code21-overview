@@ -121,3 +121,41 @@ genome Adam_Kadmon_v1 {
     }
   }
 }
+
+
+## 5. Evolutionary Engine & Self-Reference
+
+The C++ kernel treats each `genome` as a template specialisation with compile-time parameters.
+
+- In **production mode**, genes collapse to constants (no mutation overhead).
+- In **evolution mode**, genes become mutable objects, updated by genetic operators.
+
+The long-term research goal is to allow a higher-level “Architect” process to:
+
+1. inspect surviving genomes and doctrines,
+2. propose new GODLANG.FIN source variants,
+3. compile them JIT into shared objects,
+4. deploy them into the live evolutionary population.
+
+In other words, the system should gradually learn to **rewrite its own language-level strategies**, while remaining bounded by the doctrines and governance rules specified at the GODLANG.FIN level.
+
+---
+
+## 6. Conclusion & Future Work
+
+GODLANG.FIN and the GODBRAIN / CODE-21 architecture aim to provide:
+
+- a **formal language** for evolutionary financial agents,
+- a **governance framework** robust enough for institutional contexts,
+- and a **bridge** between academic research (AI, complex systems, quantitative finance) and real-world trading infrastructure.
+
+Future work includes:
+
+- full formalisation of the grammar (EBNF) and type system,
+- static analysis tools for doctrine and genome safety,
+- empirical studies on live and historical market data,
+- and collaboration with academic and industry partners.
+
+This draft intentionally omits proprietary implementation details and concrete trading strategies.  
+It is intended as a **research preview** for admissions, peer review and potential collaboration.
+
